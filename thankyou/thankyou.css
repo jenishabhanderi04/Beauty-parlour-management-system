@@ -1,0 +1,7 @@
+body{
+    background-color: #ddd;
+    font-family: var(--font-cursive);
+}
+.display-3{
+    font-family: var(--font-cursive);
+}

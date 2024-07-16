@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+}
+.bg-1{
+    flex: 1;
+    background-color: lightpink;
+}
+.bg-2{
+    flex: 1;
+    background-color: #f7e6df;
+}
+.about-container{
+    width: 10px;
+    height: 20px;
+    /* min-height: 80vh; */
+    position: absolute;
+    background-color: white;
+    /* box-shadow: 24px 24px 30px #75492b; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 40px; */
+    /* border-radius: 5px; */
+}
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+}
+.text-container h1{
+    font-size: 100px;
+    padding: 20px 0px;
+    font-family: var(--font-cursive);
+    font-size: 4rem;
+    line-height: 3.5rem;
+    letter-spacing: 4px;
+    color: var(--first-color);
+    margin-bottom: 1.5rem;
+}
+.text-container a{
+    text-decoration: none;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: #75492b;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    transition: .3s all ease;
+}
+.text-container a:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid rebeccapurple;
+}
+@media screen and (max-width: 1600px){
+    .about-container{
+        width: 90%;
+    }
+    .image-container img{
+        width: 400px;
+        height: 400px;
+    }
+    .text-container h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .about-container{
+        flex-direction: column;
+    }
+    .image-container img{
+        width: 300px;
+        height: 300px;
+    }
+    .text-container {
+        align-items: center;
+    }
+}
+/* Start Gallery Section */
+.gallery-slider{
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-slider_p .slide_p{
+    width:100%;
+    height: 450px;
+    /* border-radius: 200px; */
+    margin-left: 190px;
+    background: url('img/b1.jpg') no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    animation:slide 15s ease infinite;
+    padding-left: 15pxd;
+}
+
+
+@keyframes slide_p{
+    10%{
+        background: url('img/01.jpeg') no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+    }
+    20%{
+        background: url('img/02.jpeg') no-repeat;
+        background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    }
+    30%{
+        background: url('img/03.jpeg') no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+    }
+    40%{
+        background: url('img/04.jpeg') no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+    }
+    50%{
+        background: url('img/05.jpeg') no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+    }
+    60%{
+        background: url('img/b8.jpg') no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+    }
+    70%{
+        background: url('img/07.jpeg') no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+    }
+    80%{
+        background: url('img/08.jpeg') no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+    }
+}
+.section-title_p{
+    margin: 0 auto;
+    text-align: center;
+}
+.section-title_p h1{
+    font-family: var(--font-cursive);
+    font-size: var(--big-font-size);
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--first-color);
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+
+/* End Gallery Section */
